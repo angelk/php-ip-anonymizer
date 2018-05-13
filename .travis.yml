@@ -1,6 +1,5 @@
 language: php
 php:
-  - 7.0
   - 7.1
   - nightly
 
@@ -9,7 +8,7 @@ before_script:
 
 script:
     - composer install --prefer-dist
-    - vendor/bin/phpunit -c Test/phpunit/phpunit.xml --no-coverage
+    - vendor/bin/phpunit -c test/phpunit/phpunit.xml --no-coverage
 
 matrix:
     allow_failures:
